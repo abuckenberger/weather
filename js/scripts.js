@@ -3,7 +3,7 @@
 //go get the weather 
 
 $.simpleWeather({
- location: 'los angeles',
+ location: 99004,
  unit: 'f', 
  success: function(weather){
    console.log(weather);
