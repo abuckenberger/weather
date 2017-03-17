@@ -1,22 +1,75 @@
-.temp {
-  color:orange;
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow:column-reverse;
+    
 }
-.city {
-  color:blue;
+li {
+    list-style-type: none;
+    font-family: noto sans, sans-serif;
+    font-weight: bold;
+    font-size: 5em;
+    align-content: center;
+    color:rgb(255, 211, 90);
+    
 }
-.state{
-  color:yellow;
-}
+
 
 .image img {
-  outline:5px solid red;
+
 }
 
-.forecast figure:nth-child(1) {
-  background: red;
+
+//forecast styles
+h2, h3, figcaption {
+    color:white;
+    font-family: noto sans, sans-serif;
+    text-transform: lowercase;
 }
-.forecast figure:nth-child(2){
-background: blue;
+
+aside {
+  background:rgb(255, 211, 90);
+  display:flex;
+  flex-flow: wrap row;
+  justify-content: space-around;
+}
+
+aside figure {
+  padding:.75em;
+}
+
+
+//SIDR styles
+
+// Minimal initial style of sidebar
+//https://raw.githubusercontent.com/artberri/sidr/master/src/scss/jquery.sidr.bare.scss
+
+
+$sidebar-width: 25%;
+$sidebar-width-neg: -25%;
+
+.sidr {
+    display: block;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    z-index: 999999;
+    width: $sidebar-width;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: gray;
+   
+
+    &.right {
+        left: auto;
+        right: $sidebar-width-neg;
+    }
+
+    &.left {
+        left: $sidebar-width-neg;
+        right: auto;
+    }
 }
 
 

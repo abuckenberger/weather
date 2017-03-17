@@ -1,3 +1,3 @@
-.temp{color:orange}.city{color:blue}.state{color:yellow}.image img{outline:5px solid red}.forecast figure:nth-child(1){background:red}.forecast figure:nth-child(2){background:blue}
+ul{display:flex;justify-content:center;align-items:center;flex-flow:column-reverse}li{list-style-type:none;font-family:noto sans, sans-serif;font-weight:bold;font-size:5em;align-content:center;color:#ffd35a}h2,h3,figcaption{color:white;font-family:noto sans, sans-serif;text-transform:lowercase}aside{background:#ffd35a;display:flex;flex-flow:wrap row;justify-content:space-around}aside figure{padding:.75em}.sidr{display:block;position:fixed;top:0;height:100%;z-index:999999;width:25%;overflow-x:hidden;overflow-y:auto;background:gray}.sidr.right{left:auto;right:-25%}.sidr.left{left:-25%;right:auto}
 
 /*# sourceMappingURL=styles.css.map */
