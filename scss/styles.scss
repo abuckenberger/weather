@@ -12,6 +12,7 @@ li {
     font-size: 5em;
     align-content: center;
     color:rgb(255, 211, 90);
+    text-transform: lowercase;
     
 }
 
@@ -26,6 +27,7 @@ h2, h3, figcaption {
     color:white;
     font-family: noto sans, sans-serif;
     text-transform: lowercase;
+    text-align: center;
 }
 
 aside {
@@ -33,6 +35,7 @@ aside {
   display:flex;
   flex-flow: wrap row;
   justify-content: space-around;
+    
 }
 
 aside figure {
