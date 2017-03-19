@@ -1,3 +1,79 @@
+//classes li
+.storms {
+  color: #c9e8f2;
+}
+.snowrain {
+  color: #ddfffc;
+}
+.showers {
+  color: #4087fa;
+}
+.sleet {
+  color: #eaf9ff;
+}
+.haze {
+  color: #d6d6d6;
+}
+.clouds {
+  color: #99a6c1;
+}
+.sunsout {
+  color: #ffee68;
+}
+.clear {
+  color: #0700af;
+}
+.sun {
+  color: orange;
+}
+.hot {
+  color: #ff7219;
+}
+.thunder {
+  color: #73008e;
+}
+.snowstorm {
+  color: #ccfffd;
+}
+
+//classes aside
+.stormsaside {
+  background: #c9e8f2;
+}
+.snowrainaside {
+  background: #ddfffc;
+}
+.showersaside {
+  background: #4087fa;
+}
+.sleetaside {
+  background: #eaf9ff;
+}
+.hazeaside {
+  background: #d6d6d6;
+}
+.cloudsaside {
+  background: #99a6c1;
+}
+.sunsoutaside {
+  background: #ffee68;
+}
+.clearaside {
+  background: #0700af;
+}
+.sunaside {
+  background: orange;
+}
+.hotaside {
+  background: #ff7219;
+}
+.thunderaside {
+  background: #73008e;
+}
+.snowstormaside {
+  background: #ccfffd;
+}
+
 ul {
     display: flex;
     justify-content: center;
@@ -35,6 +111,7 @@ aside {
   display:flex;
   flex-flow: wrap row;
   justify-content: space-around;
+    opacity:.5%;
     
 }
 
