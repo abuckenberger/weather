@@ -11,7 +11,7 @@ $.simpleWeather({
    $('.temp').text(weather.temp);
    $('.city').text(weather.city);
    $('.state').text(weather.region);
-   $('.image img').attr('src',      weather.image);
+   $('i').addClass( 'icon-' + weather.code );
    
 //future weather day 1
 $('aside figure:nth-child(1) h2').text(weather.forecast[0].day); 
