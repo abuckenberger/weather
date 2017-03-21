@@ -92,14 +92,8 @@ li {
     
 }
 
-
-.image img {
-
-}
-
-
 //forecast styles
-h2, h3, figcaption {
+h2, h3, figcaption, .icons {
     color:white;
     font-family: noto sans, sans-serif;
     text-transform: lowercase;
@@ -112,11 +106,12 @@ aside {
   flex-flow: wrap row;
   justify-content: space-around;
     opacity:.5%;
+    align-items: stretch;
     
 }
 
 aside figure {
-  padding:.75em;
+  padding:.5em;
 }
 
 
@@ -138,7 +133,6 @@ $sidebar-width-neg: -25%;
     width: $sidebar-width;
     overflow-x: hidden;
     overflow-y: auto;
-    background: gray;
    
 
     &.right {
@@ -151,6 +145,21 @@ $sidebar-width-neg: -25%;
         right: auto;
     }
 }
+
+li a {
+    color: white;
+    text-align: center;
+    font-size: .2em;
+    list-style: none;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#close {
+    color:white;
+    text-decoration: none;
+    padding: 2em;
+}
+
 
 //icon font
 

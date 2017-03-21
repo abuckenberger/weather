@@ -15,7 +15,7 @@ $.simpleWeather({
    
 //future weather day 1
 $('aside figure:nth-child(1) h2').text(weather.forecast[0].day); 
-$('aside figure:nth-child(1) img').attr('src', weather.forecast[0].image);
+$('aside figure:nth-child(1) i').addClass( 'icon-' + weather.forecast[0].code );
 $('aside figure:nth-child(1) figcaption').text(weather.forecast[0].text); 
 $('aside figure:nth-child(1) .high').text(weather.forecast[0].high); 
 //day two      
