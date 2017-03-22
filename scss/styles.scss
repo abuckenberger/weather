@@ -292,6 +292,32 @@ i {
     }
   
 }
+$sidebar-width: 50%;
+$sidebar-width-neg: -50%;
+
+.sidr {
+    display: block;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    z-index: 999999;
+    width: $sidebar-width;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: right;
+    font-size: .15em;
+   
+
+    &.right {
+        left: auto;
+        right: $sidebar-width-neg;
+    }
+
+    &.left {
+        left: $sidebar-width-neg;
+        right: auto;
+    }
+}
 
 /* Tablet:  768px = 160em */
 @media screen and (min-width: 40em)  {
@@ -302,6 +328,32 @@ aside figure {
         
 }
 
+    $sidebar-width: 33%;
+$sidebar-width-neg: -33%;
+
+.sidr {
+    display: block;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    z-index: 999999;
+    width: $sidebar-width;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: right;
+    font-size: .15em;
+   
+
+    &.right {
+        left: auto;
+        right: $sidebar-width-neg;
+    }
+
+    &.left {
+        left: $sidebar-width-neg;
+        right: auto;
+    }
+}
 
       
 }
@@ -315,6 +367,32 @@ aside figure {
         width:12%;
     }
 
+}
+$sidebar-width: 20%;
+$sidebar-width-neg: -20%;
+
+.sidr {
+    display: block;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    z-index: 999999;
+    width: $sidebar-width;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: right;
+    font-size: .15em;
+   
+
+    &.right {
+        left: auto;
+        right: $sidebar-width-neg;
+    }
+
+    &.left {
+        left: $sidebar-width-neg;
+        right: auto;
+    }
 }
 
 
