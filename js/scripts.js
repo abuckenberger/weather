@@ -1,9 +1,83 @@
 // YOUR SCRIPTS GO HERE
+/* 
+navigator.geolocation.getCurrentPosition(function(position) {
+    //load weather using your lat/lng coordinates. See _loadWeather()_ below
+    position.coords.latitude+','+position.coords.longitude; 
+    // See latitute & longitude. Note, wait a few seconds
+    console.log(position.coords.latitude+','+position.coords.longitude);
+});
+*/
+navigator.geolocation.getCurrentPosition(function(position){
+	var latitude = position.coords.latitude;
+  var longitude = position.coords.longitude;
+	var latAndLong = latitude + ',' + longitude; 
+  console.log(latAndLong);
+	return latAndLong;
+});
 
+// Get Geo Location
+// Check for GeoLocation Support on Browser
+if ('geolocation' in navigator) {
+
+   $('.geo').show(); 
+
+} else {
+  
+  $('.geo').hide();
+  $('.geo').prepend('<p>Geolocation Not Supported</p>');
+
+}
+
+// On Click, Get Geolocation, Call Weather Function
+$('.geo').click( function() {
+      
+    //load weather using your lat/long coordinates
+    navigator.geolocation.getCurrentPosition(function(position) {
+      
+      // Check lat/long coordinates
+      var lat = position.coords.latitude;
+      var long = position.coords.longitude;
+      
+      console.log(lat, long);
+      
+      // Send to SimpleWeather
+      getWeather( lat + ',' + long ); 
+    });
+   
+});
+
+// Show geolocated weather
+var getWeather = function(location) {
+    
+   $.simpleWeather({
+    location: location,
+    unit: 'f',
+    success: function(weather) {
+      
+      // Entire weather object
+      console.log(weather);
+      
+      // Display Data
+      $('.temp').text(weather.temp);
+      $('.city').text(weather.city);
+      $('img').attr('src', weather.image);
+        
+
+    },
+    error: function(error) {
+      // Show if weather cannot be retreived
+      console.log('Look Outside.');
+    }
+  
+  });
+    
+};
+
+  
 //go get the weather 
 
 $.simpleWeather({
- location: 'cheney',
+ location: 'pasco, wa',
  unit: 'f', 
  success: function(weather){
    console.log(weather);
@@ -157,6 +231,8 @@ $('#close').sidr({
   method:'close'
   
 });
+
+//geolocation
 
 
 
