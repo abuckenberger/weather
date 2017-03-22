@@ -114,6 +114,30 @@ aside figure {
   padding:.5em;
 }
 
+//button styles
+
+.button {
+    text-align: center;
+}
+
+button {
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 10px #f9f9fa;
+    text-align: center;
+    margin: 0 auto;
+}
+
+button:active {
+  background-color: #8c8c8d;
+  box-shadow: 0 5px #d5d7d8;
+  transform: translateY(5px);
+}
+:focus {
+    outline:none;
+}
+
 
 //SIDR styles
 

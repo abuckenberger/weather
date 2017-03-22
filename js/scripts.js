@@ -163,48 +163,48 @@ $('aside figure:nth-child(5) .high').text(weather.forecast[4].high);
 //aside background
 
 if (weather.code >= 0 && weather.code <=4){
-        $('aside').addClass('stormsaside');
+        $('aside, button').addClass('stormsaside');
       }
       else if (weather.code >= 5 && weather.code <=10){
-        $('aside').addClass('snowrainaside');
+        $('aside, button').addClass('snowrainaside');
       }
      else if (weather.code >= 11 && weather.code <=12){
-        $('aside').addClass('showersaside');
+        $('aside, button').addClass('showersaside');
       }
 
      else if (weather.code >= 13 && weather.code <=18){
-        $('aside').addClass('sleetaside');
+        $('aside, button').addClass('sleetaside');
       }
      else if (weather.code >= 19 && weather.code <=23){
-        $('aside').addClass('hazeaside');
+        $('aside, button').addClass('hazeaside');
       }
 
      else if (weather.code >= 24 && weather.code <=26){
-        $('aside').addClass('cloudsaside');
+        $('aside, button').addClass('cloudsaside');
       }
      else if (weather.code >= 27 && weather.code <=30){
-        $('aside').addClass('sunsoutaside');
+        $('aside, button').addClass('sunsoutaside');
       }
 
 
      else if (weather.code >= 31 ){
-        $('aside').addClass('clearaside');
+        $('aside, button').addClass('clearaside');
       }
 
      else if (weather.code >= 32 && weather.code <=34){
-        $('aside').addClass('sunnyaside');
+        $('aside, button').addClass('sunnyaside');
       }
 
      else if (weather.code >= 36 ){
-        $('aside').addClass('hotaside');
+        $('aside, button').addClass('hotaside');
       }
 
      else if (weather.code >= 37 && weather.code <=40){
-        $('aside').addClass('thunderaside');
+        $('aside, button').addClass('thunderaside');
       }
 
      else if (weather.code >= 41 && weather.code <=43){
-        $('aside').addClass('snowstormaside');
+        $('aside, button').addClass('snowstormaside');
       }
 
       
