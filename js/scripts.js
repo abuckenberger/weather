@@ -232,8 +232,6 @@ $('#close').sidr({
   
 });
 
-//geolocation
-
 
 
 

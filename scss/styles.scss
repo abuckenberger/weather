@@ -93,6 +93,8 @@ li {
 }
 
 //forecast styles
+
+
 h2, h3, figcaption, .icons {
     color:white;
     font-family: noto sans, sans-serif;
@@ -101,23 +103,25 @@ h2, h3, figcaption, .icons {
 }
 
 aside {
-  background:rgb(255, 211, 90);
-  display:flex;
-  flex-flow: wrap row;
-  justify-content: space-around;
-    opacity:.5%;
-    align-items: stretch;
     
+      background:rgb(255, 211, 90);
+      display:flex;
+      flex-flow: wrap row;
+      justify-content: space-around;
+  
 }
 
 aside figure {
   padding:.5em;
+    align-items: stretch;
+    width: 10%;
 }
 
 //button styles
 
 .button {
     text-align: center;
+    margin-left: 20px;
 }
 
 button {
@@ -127,6 +131,10 @@ button {
   box-shadow: 0 10px #f9f9fa;
     text-align: center;
     margin: 0 auto;
+    padding:2em;
+}
+button:hover {
+    cursor: url(http://i.imgur.com/NZiuMgX.png), pointer;
 }
 
 button:active {
@@ -144,9 +152,15 @@ button:active {
 // Minimal initial style of sidebar
 //https://raw.githubusercontent.com/artberri/sidr/master/src/scss/jquery.sidr.bare.scss
 
+a:-webkit-any-link {
+    color: #d5d7d8;
+    cursor: auto;
+    text-decoration: none;
+}
 
-$sidebar-width: 25%;
-$sidebar-width-neg: -25%;
+
+$sidebar-width: 20%;
+$sidebar-width-neg: -20%;
 
 .sidr {
     display: block;
@@ -157,6 +171,7 @@ $sidebar-width-neg: -25%;
     width: $sidebar-width;
     overflow-x: hidden;
     overflow-y: auto;
+    text-align: right;
    
 
     &.right {
@@ -182,6 +197,7 @@ li a {
     color:white;
     text-decoration: none;
     padding: 2em;
+    
 }
 
 
@@ -255,7 +271,6 @@ i {
 .icon-45:before { content: "S"; }
 .icon-46:before { content: "U"; }
 .icon-47:before { content: "S"; }
-
 
 
 

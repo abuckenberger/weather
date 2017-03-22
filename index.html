@@ -21,6 +21,7 @@
 <meta name="theme-color" content="#ffffff">
 	
 </head>
+
 <body>
 	
   <!-- YOUR AWESOME WEBSITE -->
@@ -30,9 +31,8 @@
 <aside id='sidr'>
   
     <ul>
-        <li><a href="">Cheney</a></li>
-        <li><a href="">Pasco</a></li>
-        <li><a href="">Seattle</a></li>
+        <li><a href="#forecast">Forecast</a></li>
+        <li><a href="#today">Today</a></li>
       </ul>
   
 <a href="#sidr" id='close'>&#x2716;</a>
@@ -41,10 +41,12 @@
  
  <!-- WEATHER -->
  <section class="button">
- <button class='geo'>where am i?!</button> 
+ <button class='geo'>
+
+¿Dónde estás?</button> 
  </section>
 
-<ul>
+<ul id="today">
   <li class="state">state</li>
   <li class="city">city</li>
   <li><span  class="temp">00</span>&#x2109;</li>
@@ -55,12 +57,12 @@
 
 <!-- FORECAST -->
   
-<aside>
+<aside id="forecast">
   
   <figure>
     <h2>day</h2>
     <li class="icons"><i class=""> </i> </li>
-    <figcaption>conditions</figcaption>
+    <figcaption><span class="trn">conditions</span></figcaption>
     <h3><span  class="high">00</span>&#x2109;</h3>
   </figure>
 
@@ -104,6 +106,7 @@
   <script src="js/jquery.simpleWeather.min.js"></script>
   <script src="js/plugin.js"></script>
   <script src="js/jquery.sidr.min.js"></script>
+    <script src="jquery.translate.js"></script>
   <!-- YOUR SCRIPTS GO HERE -->
   <script src="js/scripts.js"></script>
   
