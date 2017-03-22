@@ -154,8 +154,14 @@ button:active {
 
 a:-webkit-any-link {
     color: #d5d7d8;
-    cursor: auto;
+    cursor: url(http://i.imgur.com/NZiuMgX.png), pointer;
     text-decoration: none;
+    font-size: 2em;
+    margin-top: 100px;
+}
+
+#sidr ul li a {
+    margin-bottom: 200px;
 }
 
 
@@ -172,6 +178,7 @@ $sidebar-width-neg: -20%;
     overflow-x: hidden;
     overflow-y: auto;
     text-align: right;
+    font-size: .15em;
    
 
     &.right {
@@ -188,10 +195,11 @@ $sidebar-width-neg: -20%;
 li a {
     color: white;
     text-align: center;
-    font-size: .2em;
+    font-size: .15em;
     list-style: none;
     text-decoration: none;
     text-transform: uppercase;
+   
 }
 #close {
     color:white;
