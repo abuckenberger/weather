@@ -88,30 +88,30 @@ $.simpleWeather({
    $('i').addClass( 'icon-' + weather.code );
    
 //future weather day 1
-$('aside figure:nth-child(1) h2').text(weather.forecast[0].day); 
-$('aside figure:nth-child(1) i').addClass( 'icon-' + weather.forecast[0].code );
-$('aside figure:nth-child(1) figcaption').text(weather.forecast[0].text); 
-$('aside figure:nth-child(1) .high').text(weather.forecast[0].high); 
+$('aside figure:nth-child(1) h2').text(weather.forecast[1].day); 
+$('aside figure:nth-child(1) i').addClass( 'icon-' + weather.forecast[1].code );
+$('aside figure:nth-child(1) figcaption').text(weather.forecast[1].text); 
+$('aside figure:nth-child(1) .high').text(weather.forecast[1].high); 
 //day two      
-$('aside figure:nth-child(2) h2').text(weather.forecast[1].day);  
-$('aside figure:nth-child(2) img').attr('src', weather.forecast[1].image);
-$('aside figure:nth-child(2) figcaption').text(weather.forecast[1].text);
-$('aside figure:nth-child(2) .high').text(weather.forecast[1].high); 
+$('aside figure:nth-child(2) h2').text(weather.forecast[2].day);  
+$('aside figure:nth-child(2) img').attr('src', weather.forecast[2].image);
+$('aside figure:nth-child(2) figcaption').text(weather.forecast[2].text);
+$('aside figure:nth-child(2) .high').text(weather.forecast[2].high); 
 //day three     
-$('aside figure:nth-child(3) h2').text(weather.forecast[2].day);  
-$('aside figure:nth-child(3) img').attr('src', weather.forecast[2].image);
-$('aside figure:nth-child(3) figcaption').text(weather.forecast[2].text);
-$('aside figure:nth-child(3) .high').text(weather.forecast[2].high); 
+$('aside figure:nth-child(3) h2').text(weather.forecast[3].day);  
+$('aside figure:nth-child(3) img').attr('src', weather.forecast[3].image);
+$('aside figure:nth-child(3) figcaption').text(weather.forecast[3].text);
+$('aside figure:nth-child(3) .high').text(weather.forecast[3].high); 
 //day four     
-$('aside figure:nth-child(4) h2').text(weather.forecast[3].day);  
-$('aside figure:nth-child(4) img').attr('src', weather.forecast[3].image);
-$('aside figure:nth-child(4) figcaption').text(weather.forecast[3].text);
-$('aside figure:nth-child(4) .high').text(weather.forecast[3].high); 
+$('aside figure:nth-child(4) h2').text(weather.forecast[4].day);  
+$('aside figure:nth-child(4) img').attr('src', weather.forecast[4].image);
+$('aside figure:nth-child(4) figcaption').text(weather.forecast[4].text);
+$('aside figure:nth-child(4) .high').text(weather.forecast[4].high); 
 //day five     
-$('aside figure:nth-child(5) h2').text(weather.forecast[4].day);  
-$('aside figure:nth-child(5) img').attr('src', weather.forecast[4].image);
-$('aside figure:nth-child(5) figcaption').text(weather.forecast[4].text);
-$('aside figure:nth-child(5) .high').text(weather.forecast[4].high);  
+$('aside figure:nth-child(5) h2').text(weather.forecast[5].day);  
+$('aside figure:nth-child(5) img').attr('src', weather.forecast[5].image);
+$('aside figure:nth-child(5) figcaption').text(weather.forecast[5].text);
+$('aside figure:nth-child(5) .high').text(weather.forecast[5].high);  
      
 //change li color
    

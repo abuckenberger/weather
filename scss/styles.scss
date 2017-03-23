@@ -74,6 +74,14 @@
   background: #ccfffd;
 }
 
+
+.today ul {
+    flex-flow: row-reverse;
+    
+}
+.today i {
+    font-size: 700%;
+}
 ul {
     display: flex;
     justify-content: center;
@@ -90,11 +98,11 @@ li {
     align-content: center;
     color:rgb(255, 211, 90);
     text-transform: lowercase;
+    font-style: italic;
     
 }
 
 //forecast styles
-
 
 h2, h3, figcaption, .icons {
     color:white;
@@ -109,8 +117,7 @@ aside {
       display:flex;
       flex-flow: wrap row;
       justify-content: space-around;
-    width: 100%;
-  
+    width: 100%; 
 }
 
 aside figure {
@@ -129,7 +136,7 @@ aside figure {
 button {
   color: #fff;
   border: none;
-  border-radius: 15px;
+  border-radius: 75px;
   box-shadow: 0 10px #f9f9fa;
     text-align: center;
     margin: 0 auto;
@@ -179,7 +186,7 @@ $sidebar-width-neg: -20%;
     width: $sidebar-width;
     overflow-x: hidden;
     overflow-y: auto;
-    text-align: right;
+    text-align: center;
     font-size: .15em;
    
 
@@ -207,6 +214,7 @@ li a {
     color:white;
     text-decoration: none;
     padding: 2em;
+    font-size: 50px;
     
 }
 
@@ -306,7 +314,7 @@ $sidebar-width-neg: -50%;
     overflow-x: hidden;
     overflow-y: auto;
     text-align: right;
-    font-size: .15em;
+    font-size: .05em;
    
 
     &.right {
@@ -319,9 +327,18 @@ $sidebar-width-neg: -50%;
         right: auto;
     }
 }
+.today ul {
+    flex-flow: column-reverse;
+    
+}
+.today ul li {
+    padding: none;
+    margin: none;
+}
+
 
 /* Tablet:  768px = 160em */
-@media screen and (min-width: 40em)  {
+@media screen and (min-width: 30em)  {
 
     
 aside figure {
@@ -361,7 +378,14 @@ $sidebar-width-neg: -33%;
 
 /* Desktop: 1280px = 80em */
 @media screen and (min-width: 40em) { 
+
+    .today ul {
+    flex-flow: row-reverse;
     
+}
+    .today ul li {
+    padding: 25px;
+}
 
     
 aside figure {
