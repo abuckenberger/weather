@@ -81,6 +81,7 @@ ul {
     flex-flow:column-reverse;
     
 }
+
 li {
     list-style-type: none;
     font-family: noto sans, sans-serif;
@@ -359,7 +360,7 @@ $sidebar-width-neg: -33%;
 }
 
 /* Desktop: 1280px = 80em */
-@media screen and (min-width: 45em) { 
+@media screen and (min-width: 40em) { 
     
 
     
